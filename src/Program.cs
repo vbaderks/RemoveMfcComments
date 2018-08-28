@@ -10,7 +10,7 @@ namespace RemoveMfcComments
         {
             if (args.Length != 2)
             {
-                Console.WriteLine("Usage: RemoveMfcComments <directory> <patter>");
+                Console.WriteLine("Usage: RemoveMfcComments <directory> <pattern>");
                 return;
             }
 
@@ -87,7 +87,7 @@ namespace RemoveMfcComments
                    line.Contains("//{{AFX_VIRTUAL") ||
                    line.Equals("//}}AFX_VIRTUAL") ||
                    line.Contains("//{{AFX_EVENTSINK_MAP") ||
-                   line.Equals("//}}AFX_MSG_MAP") ||
+                   line.Equals("//}}AFX_EVENTSINK_MAP") ||
                    line.Contains("//{{AFX_DISPATCH") ||
                    line.Equals("//}}AFX_DISPATCH") ||
                    line.Contains("//{{AFX_DISPATCH_MAP") ||
@@ -117,7 +117,9 @@ namespace RemoveMfcComments
                        "// Microsoft Developer Studio will insert additional declarations immediately before the previous line.") ||
                    line.Equals("// Microsoft Visual C++ will insert additional declarations immediately before the previous line.") ||
                    line.Equals("// Generated message map functions") ||
-                   line.Equals("// NOTE: the ClassWizard will add member functions here");
+                   line.Equals("// NOTE: the ClassWizard will add member functions here") ||
+                   line.Equals("// ClassWizard generate virtual function overrides") ||
+                   line.Equals("// NOTE: the ClassWizard will add DDX and DDV calls here");
         }
     }
 }
