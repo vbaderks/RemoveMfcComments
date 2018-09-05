@@ -1,4 +1,4 @@
-﻿// Copyright (C) Victor Derks. See LICENSE.TXT for the details of the software license.
+﻿// Copyright (C) Victor Derks. See LICENSE.md for the details of the software license.
 
 using System.Reflection;
 using System.Runtime.InteropServices;
@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyDescription("")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

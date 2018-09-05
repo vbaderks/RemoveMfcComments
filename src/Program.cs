@@ -1,4 +1,4 @@
-﻿// Copyright (C) Victor Derks. See LICENSE.TXT for the details of the software license.
+﻿// Copyright (C) Victor Derks. See LICENSE.md for the details of the software license.
 
 using System;
 using System.IO;
