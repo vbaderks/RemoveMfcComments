@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Copyright (C) Victor Derks. See LICENSE.TXT for the details of the software license.
+
+using System;
 using System.IO;
 using System.Text;
 
