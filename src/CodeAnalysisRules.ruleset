@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Code Analysis Rules" Description="Code analysis rules for RemoveMfcComment project" ToolsVersion="15.0">
+  <IncludeAll Action="Error" />
+</RuleSet>

@@ -76,52 +76,52 @@ namespace RemoveMfcComments
         {
             line = line.Trim();
 
-            return line.Contains("//{{AFX_DATA(") ||
-                   line.Equals("//}}AFX_DATA") ||
-                   line.Contains("//{{AFX_DATA_INIT") ||
-                   line.Equals("//}}AFX_DATA_INIT") ||
-                   line.Contains("//{{AFX_DATA_MAP") ||
-                   line.Equals("//}}AFX_DATA_MAP") ||
-                   line.Contains("//{{AFX_MSG") ||
-                   line.Equals("//}}AFX_MSG") ||
-                   line.Contains("//{{AFX_MSG_MAP") ||
-                   line.Equals("//}}AFX_MSG_MAP") ||
-                   line.Contains("//{{AFX_VIRTUAL") ||
-                   line.Equals("//}}AFX_VIRTUAL") ||
-                   line.Contains("//{{AFX_EVENTSINK_MAP") ||
-                   line.Equals("//}}AFX_EVENTSINK_MAP") ||
-                   line.Contains("//{{AFX_DISPATCH") ||
-                   line.Equals("//}}AFX_DISPATCH") ||
-                   line.Contains("//{{AFX_DISPATCH_MAP") ||
-                   line.Equals("//}}AFX_DISPATCH_MAP") ||
-                   line.Contains("//{{AFX_FIELD_MAP") ||
-                   line.Equals("//}}AFX_FIELD_MAP") ||
-                   line.Contains("//{{AFX_FIELD_INIT") ||
-                   line.Equals("//}}AFX_FIELD_INIT") ||
-                   line.Contains("//{{AFX_EVENT_MAP") ||
-                   line.Equals("//}}AFX_EVENT_MAP") ||
-                   line.Equals("// Construction") ||
-                   line.Equals("// Dialog Data") ||
-                   line.Equals("// Overrides") ||
-                   line.Equals("// Implementation") ||
-                   line.Equals("// ClassWizard generated virtual function overrides") ||
-                   line.Equals("// NOTE: the ClassWizard will add message map macros here") ||
-                   line.Equals("// NOTE: the ClassWizard will add data members here") ||
-                   line.Equals("// NOTE: the ClassWizard will add member initialization here") ||
-                   line.Equals("// NOTE - ClassWizard will add and remove event map entries") ||
-                   line.Equals("// Generated message map functions") ||
-                   line.Equals("// NOTE - the ClassWizard will add and remove member functions here.") ||
-                   line.Equals("//    DO NOT EDIT what you see in these blocks of generated code !") ||
-                   line.Equals("// NOTE - the ClassWizard will add and remove mapping macros here.") ||
-                   line.Equals("//    DO NOT EDIT what you see in these blocks of generated code!") ||
-                   line.Equals("//{{AFX_INSERT_LOCATION}}") ||
+            return line.Contains("//{{AFX_DATA(", StringComparison.InvariantCulture) ||
+                   line.Equals("//}}AFX_DATA", StringComparison.InvariantCulture) ||
+                   line.Contains("//{{AFX_DATA_INIT", StringComparison.InvariantCulture) ||
+                   line.Equals("//}}AFX_DATA_INIT", StringComparison.InvariantCulture) ||
+                   line.Contains("//{{AFX_DATA_MAP", StringComparison.InvariantCulture) ||
+                   line.Equals("//}}AFX_DATA_MAP", StringComparison.InvariantCulture) ||
+                   line.Contains("//{{AFX_MSG", StringComparison.InvariantCulture) ||
+                   line.Equals("//}}AFX_MSG", StringComparison.InvariantCulture) ||
+                   line.Contains("//{{AFX_MSG_MAP", StringComparison.InvariantCulture) ||
+                   line.Equals("//}}AFX_MSG_MAP", StringComparison.InvariantCulture) ||
+                   line.Contains("//{{AFX_VIRTUAL", StringComparison.InvariantCulture) ||
+                   line.Equals("//}}AFX_VIRTUAL", StringComparison.InvariantCulture) ||
+                   line.Contains("//{{AFX_EVENTSINK_MAP", StringComparison.InvariantCulture) ||
+                   line.Equals("//}}AFX_EVENTSINK_MAP", StringComparison.InvariantCulture) ||
+                   line.Contains("//{{AFX_DISPATCH", StringComparison.InvariantCulture) ||
+                   line.Equals("//}}AFX_DISPATCH", StringComparison.InvariantCulture) ||
+                   line.Contains("//{{AFX_DISPATCH_MAP", StringComparison.InvariantCulture) ||
+                   line.Equals("//}}AFX_DISPATCH_MAP", StringComparison.InvariantCulture) ||
+                   line.Contains("//{{AFX_FIELD_MAP", StringComparison.InvariantCulture) ||
+                   line.Equals("//}}AFX_FIELD_MAP", StringComparison.InvariantCulture) ||
+                   line.Contains("//{{AFX_FIELD_INIT", StringComparison.InvariantCulture) ||
+                   line.Equals("//}}AFX_FIELD_INIT", StringComparison.InvariantCulture) ||
+                   line.Contains("//{{AFX_EVENT_MAP", StringComparison.InvariantCulture) ||
+                   line.Equals("//}}AFX_EVENT_MAP", StringComparison.InvariantCulture) ||
+                   line.Equals("// Construction", StringComparison.InvariantCulture) ||
+                   line.Equals("// Dialog Data", StringComparison.InvariantCulture) ||
+                   line.Equals("// Overrides", StringComparison.InvariantCulture) ||
+                   line.Equals("// Implementation", StringComparison.InvariantCulture) ||
+                   line.Equals("// ClassWizard generated virtual function overrides", StringComparison.InvariantCulture) ||
+                   line.Equals("// NOTE: the ClassWizard will add message map macros here", StringComparison.InvariantCulture) ||
+                   line.Equals("// NOTE: the ClassWizard will add data members here", StringComparison.InvariantCulture) ||
+                   line.Equals("// NOTE: the ClassWizard will add member initialization here", StringComparison.InvariantCulture) ||
+                   line.Equals("// NOTE - ClassWizard will add and remove event map entries", StringComparison.InvariantCulture) ||
+                   line.Equals("// Generated message map functions", StringComparison.InvariantCulture) ||
+                   line.Equals("// NOTE - the ClassWizard will add and remove member functions here.", StringComparison.InvariantCulture) ||
+                   line.Equals("//    DO NOT EDIT what you see in these blocks of generated code !", StringComparison.InvariantCulture) ||
+                   line.Equals("// NOTE - the ClassWizard will add and remove mapping macros here.", StringComparison.InvariantCulture) ||
+                   line.Equals("//    DO NOT EDIT what you see in these blocks of generated code!", StringComparison.InvariantCulture) ||
+                   line.Equals("//{{AFX_INSERT_LOCATION}}", StringComparison.InvariantCulture) ||
                    line.Equals(
-                       "// Microsoft Developer Studio will insert additional declarations immediately before the previous line.") ||
-                   line.Equals("// Microsoft Visual C++ will insert additional declarations immediately before the previous line.") ||
-                   line.Equals("// Generated message map functions") ||
-                   line.Equals("// NOTE: the ClassWizard will add member functions here") ||
-                   line.Equals("// ClassWizard generate virtual function overrides") ||
-                   line.Equals("// NOTE: the ClassWizard will add DDX and DDV calls here");
+                       "// Microsoft Developer Studio will insert additional declarations immediately before the previous line.", StringComparison.InvariantCulture) ||
+                   line.Equals("// Microsoft Visual C++ will insert additional declarations immediately before the previous line.", StringComparison.InvariantCulture) ||
+                   line.Equals("// Generated message map functions", StringComparison.InvariantCulture) ||
+                   line.Equals("// NOTE: the ClassWizard will add member functions here", StringComparison.InvariantCulture) ||
+                   line.Equals("// ClassWizard generate virtual function overrides", StringComparison.InvariantCulture) ||
+                   line.Equals("// NOTE: the ClassWizard will add DDX and DDV calls here", StringComparison.InvariantCulture);
         }
     }
 }
