@@ -76,29 +76,29 @@ namespace RemoveMfcComments
         {
             line = line.Trim();
 
-            return line.Contains("//{{AFX_DATA(", StringComparison.InvariantCulture) ||
+            return line.Contains("//{{AFX_DATA(") ||
                    line.Equals("//}}AFX_DATA", StringComparison.InvariantCulture) ||
-                   line.Contains("//{{AFX_DATA_INIT", StringComparison.InvariantCulture) ||
+                   line.Contains("//{{AFX_DATA_INIT") ||
                    line.Equals("//}}AFX_DATA_INIT", StringComparison.InvariantCulture) ||
-                   line.Contains("//{{AFX_DATA_MAP", StringComparison.InvariantCulture) ||
+                   line.Contains("//{{AFX_DATA_MAP") ||
                    line.Equals("//}}AFX_DATA_MAP", StringComparison.InvariantCulture) ||
-                   line.Contains("//{{AFX_MSG", StringComparison.InvariantCulture) ||
+                   line.Contains("//{{AFX_MSG") ||
                    line.Equals("//}}AFX_MSG", StringComparison.InvariantCulture) ||
-                   line.Contains("//{{AFX_MSG_MAP", StringComparison.InvariantCulture) ||
+                   line.Contains("//{{AFX_MSG_MAP") ||
                    line.Equals("//}}AFX_MSG_MAP", StringComparison.InvariantCulture) ||
-                   line.Contains("//{{AFX_VIRTUAL", StringComparison.InvariantCulture) ||
+                   line.Contains("//{{AFX_VIRTUAL") ||
                    line.Equals("//}}AFX_VIRTUAL", StringComparison.InvariantCulture) ||
-                   line.Contains("//{{AFX_EVENTSINK_MAP", StringComparison.InvariantCulture) ||
+                   line.Contains("//{{AFX_EVENTSINK_MAP") ||
                    line.Equals("//}}AFX_EVENTSINK_MAP", StringComparison.InvariantCulture) ||
-                   line.Contains("//{{AFX_DISPATCH", StringComparison.InvariantCulture) ||
+                   line.Contains("//{{AFX_DISPATCH") ||
                    line.Equals("//}}AFX_DISPATCH", StringComparison.InvariantCulture) ||
-                   line.Contains("//{{AFX_DISPATCH_MAP", StringComparison.InvariantCulture) ||
+                   line.Contains("//{{AFX_DISPATCH_MAP") ||
                    line.Equals("//}}AFX_DISPATCH_MAP", StringComparison.InvariantCulture) ||
-                   line.Contains("//{{AFX_FIELD_MAP", StringComparison.InvariantCulture) ||
+                   line.Contains("//{{AFX_FIELD_MAP") ||
                    line.Equals("//}}AFX_FIELD_MAP", StringComparison.InvariantCulture) ||
-                   line.Contains("//{{AFX_FIELD_INIT", StringComparison.InvariantCulture) ||
+                   line.Contains("//{{AFX_FIELD_INIT") ||
                    line.Equals("//}}AFX_FIELD_INIT", StringComparison.InvariantCulture) ||
-                   line.Contains("//{{AFX_EVENT_MAP", StringComparison.InvariantCulture) ||
+                   line.Contains("//{{AFX_EVENT_MAP") ||
                    line.Equals("//}}AFX_EVENT_MAP", StringComparison.InvariantCulture) ||
                    line.Equals("// Construction", StringComparison.InvariantCulture) ||
                    line.Equals("// Dialog Data", StringComparison.InvariantCulture) ||
